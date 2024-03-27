@@ -9,16 +9,16 @@ service nani {
         };
 }
 
-annotate nani.Product with @odata.draft.enabled;
+// annotate nani.Product with @odata.draft.enabled;
 
 annotate nani.Product with {
     product_img @assert.match: '^https?:\/\/.*\.(?:png|jpg|jpeg)$';
 };
 
 annotate nani.Product with {
-@Common.Text : ' {Product}'
-@Core.IsURL: true
-@Core.MediaType: 'image/jpg'
+// @Common.Text : ' {Product}'
+// @Core.IsURL: true
+// @Core.MediaType: 'image/jpg'
 product_img;
 };
 
@@ -86,24 +86,3 @@ annotate nani.Product with @(
         },
     ],    
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
